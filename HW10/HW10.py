@@ -169,15 +169,15 @@ if __name__ == "__main__" :
     Laplacian_1_img = zero_crossing_edge_detector(Laplacian_1_img)
     cv2.imwrite("Laplacian_1.jpg", Laplacian_1_img)
 
-    Laplacian_2_img = Laplacian_2(original_img, 15)
+    Laplacian_2_img = Laplacian_2(original_img, 10)
     Laplacian_2_img = zero_crossing_edge_detector(Laplacian_2_img)
     cv2.imwrite("Laplacian_2.jpg", Laplacian_2_img)
 
-    minimum_var_Laplacian_img = minimum_var_Laplacian(original_img, 20)
+    minimum_var_Laplacian_img = minimum_var_Laplacian(original_img, 8)
     minimum_var_Laplacian_img = zero_crossing_edge_detector(minimum_var_Laplacian_img)
     cv2.imwrite("minimum_var_Laplacian.jpg", minimum_var_Laplacian_img)
 
-    Laplacian_of_Gaussian_img = Laplacian_of_Gaussian(original_img, 3000)
+    Laplacian_of_Gaussian_img = Laplacian_of_Gaussian(original_img, 2000)
     Laplacian_of_Gaussian_img = zero_crossing_edge_detector(Laplacian_of_Gaussian_img)
     cv2.imwrite("Laplacian_of_Gaussian.jpg", Laplacian_of_Gaussian_img)
 
